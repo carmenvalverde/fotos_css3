@@ -1,0 +1,182 @@
+body{
+	font-family:dancing script;
+	font-size: 18px;
+	background:#02010a;
+}
+
+header{
+	background: #5b7989;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+
+.box{
+		padding:20px;
+		border:10px;
+		width: 900px;
+		box-sizing: box;
+		-moz-box-sizing: box;
+		-webkit-box-sizing: box;
+	}
+
+.titulos{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	flex-direction: row;
+	margin-left: 10px;
+	margin-right: 10px;
+  color:white;
+}
+
+#titulo1 {
+		font-size: 1.2rem;
+		text-align:left;
+		width: 50%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+
+#titulo2{
+		text-align:right;
+		font-size: 1.2rem;
+		width: 50%;
+}
+
+#menu-principal a{
+  color:white;
+  text-decoration:none;
+}
+
+#menu-principal a:hover{
+  text-decoration:underline;
+}
+#menu-principal a + a::before{
+  content:" | ";
+  color:white;
+}
+
+.contenido{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		background: #d5c75f;
+		flex-direction: row;
+	}
+
+
+.contenido  img {
+	width:90%;
+	box-shadow: 2px 2px #02010a;
+}
+
+
+#col-1 {
+	text-align: center;
+	width: 33%;
+}
+
+#col-2 {
+	text-align: center;
+	width: 33%;
+}
+
+
+#col-3 {
+	text-align: center;
+	width: 33%;
+}
+
+img[src*="1"] {
+	-webkit-filter: blur(10px);
+	blur:10px;
+}
+
+img[src*="3"]{
+	-webkit-filter: sepia(90%);
+	sepia:90%;
+}
+
+.grises{
+	-webkit-filter: grayscale(100%);
+	grayscale:100%;
+}
+
+footer{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: #c6d5c5;
+
+	}
+
+.pie{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		flex-direction: row;
+		margin-left: 10px;
+		margin-right: 10px;
+		color:black;
+}
+
+#columna1{
+	text-align: left;
+	width: 25%;
+}
+
+#columna2{
+	text-align: left;
+  width: 25%;
+}
+
+#columna3{
+	text-align: left;
+  width: 25%;
+}
+
+#columna4{
+	text-align: left;
+  width: 25%;
+}
+
+@media all and (min-width:100px) and (max-width:900px) {
+div #titulo1, #titulo2{
+	text-align: center;
+	width:100%;
+}
+.contenido #col-1, #col-2, #col-3{
+	width: 100%;
+	text-align: center;
+}
+
+.pie #columna1, #columna2, #columna3, #columna4 {
+	width: 100%;
+  text-align: center;
+}
+}
+
+@keyframes rebote-animacion {
+0% {
+position: relative;
+margin-top: 150%;
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0%;
+}
+}
+.rebote {
+animation-name: rebote-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+}

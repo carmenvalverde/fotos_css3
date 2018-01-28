@@ -1,0 +1,257 @@
+body{
+	font-family:dancing script;
+	font-size:18px;
+	background:#02010a;
+}
+
+header{
+	background: #5b7989;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+
+.box{
+		padding:20px;
+		border:10px;
+		width: 900px;
+		box-sizing: box;
+		-moz-box-sizing: box;
+		-webkit-box-sizing: box;
+	}
+
+.titulos{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	flex-direction: row;
+	margin-left: 10px;
+	margin-right: 10px;
+  color:white;
+}
+
+#titulo1 {
+		font-size: 1.2rem;
+		text-align:left;
+		width: 50%;
+    text-shadow: 2px 2px #02010a;
+	}
+
+#titulo2{
+		text-align:right;
+		font-size: 1.2rem;
+		width: 50%;
+}
+
+#menu-principal a{
+  color:white;
+  text-decoration:none;
+}
+
+#menu-principal a:hover{
+  text-decoration:underline;
+}
+
+#menu-principal a + a::before{
+  content:" | ";
+  color:white;
+}
+
+.contenido img{
+	text-align: center;
+}
+
+.contenedor1{
+	display: -webkit-flex;
+	display: flex;
+	background: #82c3a6;
+}
+
+.contenedor2{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	flex-direction: row;
+  background: #d5c75f;
+	}
+
+.contenedor1 img{
+	width: 80%;
+	box-shadow: 2px 2px #02010a;
+}
+
+.contenedor2  img {
+	width: 80%;
+	height: 100%;
+	box-shadow: 2px 2px #02010a;
+}
+
+.contenedor1 #isla {
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+  text-align: center;
+}
+
+.contenedor2 #ninio {
+	width: 50%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.contenedor2 #paisaje {
+	width: 50%;
+  margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+@keyframes ninio-animacion {
+0% {
+position: relative;
+left: 0px
+}
+50% {
+position: relative;
+left: 20px;
+top:5px;
+}
+100% {
+position: relative;
+left: 0px;
+}
+}
+
+div> #paisaje img:hover{
+ -webkit-transform: rotateZ(10deg);
+ -ms-transform-rotateZ(10deg);
+ transform: rotateZ(10deg);
+ border: solid 2px black;
+ background-color:#82c3a6;
+ box-shadow: 2px 2px;
+}
+
+#ninio img:hover{
+ border: solid 2px black;
+ background-color:#82c3a6;
+ box-shadow: 2px 2px;
+}
+
+#ninio img:hover{
+animation-name: ninio-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+-o-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+footer{
+	font-size: 1.2rem;
+	color:black;
+
+	}
+
+.pie{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		flex-direction: row;
+		background:#c6d5c5;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+}
+
+#columna1{
+	text-align: left;
+	width: 23%;
+	margin: 1%;
+}
+
+#columna2{
+	text-align: left;
+  width: 23%;
+	margin: 1%;
+}
+
+#columna3{
+	text-align: left;
+  width: 23%;
+	margin: 1%;
+}
+
+#columna4{
+	text-align: left;
+  width: 23%;
+	margin: 1%;
+}
+
+@media all and (min-width:200px) and (max-width:900px) {
+#titulo1, #titulo2{
+	text-align: center;
+	width:100%;
+}
+
+.contenedor1 #isla{
+	width: 100%;
+	text-align: center;
+}
+
+.contenedor2 #paisaje {
+	width: 100%;
+	text-align: center;
+}
+
+.contenedor2 #ninio {
+	width: 100%;
+	text-align: center;
+}
+
+.pie #columna1 {
+	width: 100%;
+  text-align: center;
+}
+
+.pie #columna2{
+	width: 100%;
+  text-align: center;
+}
+
+.pie #columna3{
+	width: 100%;
+  text-align: center;
+}
+
+.pie #columna4 {
+	width: 100%;
+  text-align: center;
+}
+}
+
+@keyframes rebote-animacion {
+0% {
+position: relative;
+margin-top: 150%;
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0%;
+}
+}
+
+.rebote {
+animation-name: rebote-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+}
